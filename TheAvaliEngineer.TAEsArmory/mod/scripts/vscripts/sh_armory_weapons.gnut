@@ -1,0 +1,49 @@
+global function Armory_Weapons_Init
+
+void function Armory_Weapons_Init() {
+    AddPrivateMatchModeSettingEnum("TAE's Armory Weapons Enabled", "Armory", ["[Armory] Disabled", "[Armory] Enabled"], "0") 
+
+    array<string> pilotGuns = [
+        // TAE ones
+        "tae_weapons_blazesg",
+        "tae_weapons_grenade_knife",
+
+        // Respawn ones
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+		"",
+		"",
+    ]
+
+    array<string> pilotGrenades = [
+        // TAE ones
+
+
+        // Respawn ones
+    ]
+    
+    array<string> pilotTacticals = [
+        // TAE ones
+
+        
+        // Respawn ones
+    ]
+
+    array<string> titanGuns = [
+        // Respawn ones
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        
+    ]
+}

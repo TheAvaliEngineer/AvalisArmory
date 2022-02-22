@@ -1,0 +1,46 @@
+{
+	"Name" : "TheAvaliEngineer.TAEsArmory",
+	"Description" : "An extensive expansion to the base game's roster of weapons, grenades, and pilot abilities. \n\n\tAdds: \nS-60 Breacher: A powerful slug shotgun that burns foes with thermite.\nThrowing Knives: Throwing knives that ricochet off walls to deal more damage.\nPilot Vortex Projector: A miniature vortex shield for your pilot.",
+	"Version": "0.8.22",
+
+	"LoadPriority": 1,
+    "RequiredOnClient": true,
+
+    "Scripts": [
+		{
+			"Path": "weapons/tae_weapons_blazesg.nut",
+            "RunOn": "( CLIENT || SERVER ) && MP"
+		},
+		{
+			"Path": "weapons/tae_weapons_blazesgslug.nut",
+            "RunOn": "( CLIENT || SERVER ) && MP"
+		},
+		
+		{
+			"Path": "weapons/tae_weapons_pwave.nut",
+            "RunOn": "( CLIENT || SERVER ) && MP"
+		},
+
+		{
+			"Path": "weapons/tae_weapons_chargesg.nut",
+            "RunOn": "( CLIENT || SERVER ) && MP"
+		},
+
+		{
+			"Path": "grenades/tae_grenade_knife.nut",
+            "RunOn": "( CLIENT || SERVER ) && MP"
+		},
+
+		{
+			"Path": "sh_northstar_custom_precache_TheAvaliEngineer.gnut",
+            "RunOn": "( CLIENT || SERVER ) && MP",
+            "ClientCallback": {
+                "After": "NorthstarCustomPrecacheTheAvaliEngineer"
+            },
+            
+            "ServerCallback": {
+                "After": "NorthstarCustomPrecacheTheAvaliEngineer"
+            }
+		}
+	]
+}

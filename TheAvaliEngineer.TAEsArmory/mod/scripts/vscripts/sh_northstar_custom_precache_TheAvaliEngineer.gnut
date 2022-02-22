@@ -1,0 +1,17 @@
+untyped
+global function NorthstarCustomPrecacheTheAvaliEngineer
+
+void function NorthstarCustomPrecacheTheAvaliEngineer() {
+        // Weapons
+        PrecacheWeapon( "tae_weapons_blazesg" )
+        PrecacheWeapon( "tae_weapons_pwave" )
+        PrecacheWeapon( "tae_weapons_chargesg" )
+
+        PrecacheWeapon( "tae_chargesg_test" )
+
+        // Grenades
+        PrecacheWeapon( "tae_grenade_knife" )
+
+        // Tacticals
+        //PrecacheWeapon( "tae_tactical_pilot_vortex" ) // Need to solve particle issue.
+}
